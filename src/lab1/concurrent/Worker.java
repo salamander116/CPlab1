@@ -1,3 +1,5 @@
+package lab1.concurrent;
+
 import java.awt.geom.Point2D;
 import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
@@ -20,19 +22,19 @@ public class Worker extends Thread {
 
     public void run() {
 
-
         for (int i = 0; i < nshots; i++) {
 
             Point2D p;
 
-            //generates random value and in range
+            //generates random value and in range for x
             double random = new Random().nextDouble();
             double x = min + (random * (max - min));
 
-            //generates random value and in range
+            //generates random value and in range for y
             random = new Random().nextDouble();
             double y = min + (random * (max - min));
 
+            //validates point
             if (((x * x) + (y * y)) <= 1) {
                 p = new Point2D.Double(x, y);
                 if (!sharedPoints.containsKey(p)) {

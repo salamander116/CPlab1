@@ -1,3 +1,5 @@
+package lab1.concurrent;
+
 import java.awt.geom.Point2D;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -34,7 +36,7 @@ public class MonteSeq {
         double p = (double) points.size() / nShots;
         double pi = p * 4;
         System.out.print(
-                "Total Number of points: " + nShots + "\n" +
+                        "Total Number of points: " + nShots + "\n" +
                         "Total number of Threads " + threadNumber + "\n" +
                         "Points within the circle: " + points.size() + "\n" +
                         "Pi estimation: " + pi + "\n");

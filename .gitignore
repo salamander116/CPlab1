@@ -4,3 +4,13 @@ CPlab1.iml
 .idea/modules.xml
 
 .idea/misc.xml
+
+.idea/uiDesigner.xml
+
+out/production/CPlab1/lab1/MonteSeq.class
+
+out/production/CPlab1/lab1/Worker.class
+
+out/production/CPlab1/MonteSeq.class
+
+*.class

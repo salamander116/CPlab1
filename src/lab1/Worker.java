@@ -4,9 +4,11 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class Worker extends Thread {
 
-    public ConcurrentHashMap<Point2D, Point2D> sharedPoints;
+    public ConcurrentHashMap<Point2D, Point2D> sharedPoints; //Shared memmory among ther other threads
+
     public int nshots;
 
+    //Defines the range of points
     static int min = 0;
     static int max = 1;
 

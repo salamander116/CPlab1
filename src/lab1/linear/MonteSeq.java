@@ -1,5 +1,6 @@
+package lab1.linear;
+
 import java.awt.geom.Point2D;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;

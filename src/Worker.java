@@ -21,8 +21,7 @@ public class Worker extends Thread {
 
         for (int i = 0; i < nshots; i++) {
 
-            Point2D p = null;
-
+            Point2D p;
 
             //generates random value and in range
             double random = new Random().nextDouble();
